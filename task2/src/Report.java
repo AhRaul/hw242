@@ -9,6 +9,11 @@ class Report{
         items.add(new ReportItem("Second", (float)6));
     }
 
+    public void display(){
+        DisplayReport displayReport = new DisplayReport();
+        displayReport.output(items);
+    }
+
     public void output(){
         PrintReport reportPrint = new PrintReport();
         reportPrint.output(items);
